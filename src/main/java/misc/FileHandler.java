@@ -1,10 +1,9 @@
+package misc;
+
 import java.io.*;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.logging.Logger;
-import java.util.logging.Level;
 
 public class FileHandler {
     private static final String FILE_PATH = "tasks.txt";
@@ -26,14 +25,14 @@ public class FileHandler {
     }
 
     // lets use buffered for now
-    public void write(Task task) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_PATH, true))) {
-            String taskLine = String.format("%s,%s,%s,%s", task.ID(), task.dateCreated(), task.title(), task.state()); //must be cleaner way to do this?
-            writer.write(taskLine);
-            writer.newLine();
-        } catch (IOException e) {
-            LOGGER.severe("Error creating task file: " + e.getMessage());
-        }
+    public void write() {
+//        try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_PATH, true))) {
+//            String taskLine = String.format("%s,%s,%s,%s", task.ID(), task.dateCreated(), task.title(), task.state()); //must be cleaner way to do this?
+//            writer.write(taskLine);
+//            writer.newLine();
+//        } catch (IOException e) {
+//            LOGGER.severe("Error creating task file: " + e.getMessage());
+//        }
     }
 
     public void read() {
@@ -71,9 +70,5 @@ public class FileHandler {
         }
 
         return updatedList;
-    }
-
-    public void update(Task task) {
-
     }
 }

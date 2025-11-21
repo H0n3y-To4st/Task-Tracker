@@ -1,10 +1,9 @@
-import picocli.CommandLine;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 import picocli.CommandLine.Parameters;
 
-@Command(name = "create")
 
+@Command(name = "create")
 public class Create {
 
     @Parameters(index = "0", description = "The name of the task")
@@ -20,8 +19,6 @@ public class Create {
         return 0;
     }
 
-    public static void main(String... args) {
-        int exitCode = new CommandLine(new Create()).execute(args);
-        System.exit(exitCode);
+    private static void createTask(String title) {
     }
 }

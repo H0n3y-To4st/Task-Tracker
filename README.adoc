@@ -1,0 +1,36 @@
+= Task Tracker CLI
+:toc:
+:toclevels: 2
+
+A simple command-line *Task Tracker* tool for managing tasks using plain text files.
+The goal of this project is to create the perfect quick notetaking tool
+for my usage.
+
+== Basic Features
+
+This is the basic functionality that I aim to achieve first and foremost:
+
+* Create tasks from the command line
+* List all tasks in a file
+* Mark tasks as completed
+* Edit or delete existing tasks
+* Store tasks in plain text files
+* No database or external service required
+
+== Roadmap
+
+I want to do so much with this app, I have come across many
+technologies that I want to dive into.
+
+My motivation has returned.
+
+* Make extensive use of Picocli
+* ASCII art
+* Colour coded commands and text displays
+* Web app functionality
+* Deploy onto Netlify
+* Authorisation and authentication flow
+* DB connection
+* UI/UX
+
+Of course, the cli must be completed and its foundation must be built.
